@@ -429,7 +429,7 @@ def gen_syn_data(img_files, labels, img_dir, anno_dir, scale_augment, rotation_a
             n = min(random.randint(MIN_NO_OF_DISTRACTOR_OBJECTS, MAX_NO_OF_DISTRACTOR_OBJECTS), len(distractor_files))
             for i in xrange(n):
                 distractor_objects.append(random.choice(distractor_files))
-        print distractor_objects, distractor_files
+        	print distractor_objects, distractor_files
         idx += 1
         bg_file = random.choice(background_files)
         for blur in BLENDING_LIST:
